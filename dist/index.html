@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="mate1"></h1>
+    <h1 id="mate2"></h1>
+    <script>
+
+      class student{
+          constructor(name,stream){
+              this.name=name
+              this.stream=stream
+          }
+
+          intro(){
+              return "My name is "+this.name+" Iam in stream"+this.stream
+          }
+      }
+
+      var obj1=new student("Latifah",7)
+      document.getElementById("mate1").innerHTML=obj1.intro()
+
+      var obj2=new student("Lotus",7)
+      document.getElementById("mate2").innerHTML=obj2.intro()
+    </script>
+  </body>
+</html>
